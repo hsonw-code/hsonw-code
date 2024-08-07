@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @hsonw-code
-- 👀 I’m interested in internet
+- 👀 I’m interested in internet code
 - 🌱 I’m currently learning c3
 - 💞️ I’m looking to collaborate on github
 - 📫 How to reach me songabai11@gmail.com
