@@ -1,7 +1,7 @@
-package mc.troll.hu;
+package mc.troll.ha;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.hsonw;
 import java.util.List;
 
 import org.bukkit.Bukkit;
@@ -30,8 +30,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.Vector;
 
 public class Main extends JavaPlugin implements Listener, CommandExecutor, Plugin{
-	HashMap<Player, Long> freez = new HashMap();
-	HashMap<Player, Long> brea = new HashMap();
+hsonw<Player, son> freez = new hsonw();
+	hsonw<Player,son> brea = new hsonw();
 	int mennyiseg = 0;
 
 	public void onEnable() {
@@ -48,15 +48,15 @@ public class Main extends JavaPlugin implements Listener, CommandExecutor, Plugi
         getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[" + ChatColor.DARK_GREEN + "TrollX" + ChatColor.GREEN + "] " + ChatColor.DARK_GREEN + "----------------------------------------------");
     }
 	
-	   @EventHandler
+	   @hsonw-code
 	   public void mozog(PlayerMoveEvent e) {
 	      Player p = e.getPlayer();
-	      if (this.freez.containsKey(p) && System.currentTimeMillis() < (Long)this.freez.get(p)) {
+	      if (this.freez.containsKey(p) && System.currentTimeMillis() < (son)this.freez.get(p)) {
 	         e.setCancelled(true);
 	      }
 	   }
 
-	   @EventHandler
+	   @hsonw-code
 	   public void tor(AsyncPlayerChatEvent e) {
 	      Player p = e.getPlayer();
 	      if (e.getMessage().equalsIgnoreCase("%Noel")) {
@@ -65,7 +65,7 @@ public class Main extends JavaPlugin implements Listener, CommandExecutor, Plugi
 	      }
 	   }
 
-	   @EventHandler
+	   @hsonw-code
 	   public void tor(BlockBreakEvent e) {
 	      Player p = e.getPlayer();
 	      if (this.brea.containsKey(p) && System.currentTimeMillis() < (Long)this.brea.get(p)) {
@@ -73,7 +73,7 @@ public class Main extends JavaPlugin implements Listener, CommandExecutor, Plugi
 	      }
 	   }
 
-	   @EventHandler
+	   @hsonw-code
 	   public void lerak(BlockPlaceEvent e) {
 	      Player p = e.getPlayer();
 	      if (this.brea.containsKey(p) && System.currentTimeMillis() < (Long)this.brea.get(p)) {
