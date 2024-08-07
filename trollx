@@ -1,0 +1,8 @@
+main: mc.troll.ha.Main
+name: TrollX
+version: 2.0
+author: Noel
+
+commands:
+  troll:
+    description: TrollX command
